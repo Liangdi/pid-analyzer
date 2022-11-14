@@ -40,9 +40,24 @@ The whole thing is still under development and results/input of different and mo
 To install required Python libraries, view the list of packages in `requirements.txt` or simply run:
 
 ```
-sudo apt-get install python3-pip python3-tk
-sudo pip3 install -r requirements.txt
+#ubuntu
+sudo apt-get install python3-pip python3-tk wine
+pip install -r requirements.txt
+
+#run
+./pid-analyzer.py
 ```
+
+```
+#fedora
+sudo dnf install python3-pip python3-tkinter wine
+pip install -r requirements.txt
+
+#run
+./pid-analyzer.py
+```
+
+
 
 ## How to use this program:
 1. Record your log. Logs of 20s seem to give sufficient statistics. If it's slightly windy, longer logs can still give reasonable results. You can record multiple logs in one session: Each entry will yield a seperate plot.
